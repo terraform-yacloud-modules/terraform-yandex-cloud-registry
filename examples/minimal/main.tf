@@ -24,11 +24,7 @@ module "cloud_registry" {
     }
   ]
 
-  # Пример разрешений по IP
-  ip_permissions = {
-    pull = ["192.0.2.0/24"]
-    push = toset([])
-  }
+
 
   # Таймауты (опционально)
   timeouts = {
