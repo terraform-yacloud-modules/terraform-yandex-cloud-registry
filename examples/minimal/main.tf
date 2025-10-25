@@ -3,8 +3,8 @@ resource "yandex_iam_service_account" "registry" {
 }
 
 module "cloud_registry" {
-  source    = "../../"
-  name      = "minimal-registry"
+  source = "../../"
+  name   = "minimal-registry"
 
   # Необязательные параметры со значениями по умолчанию
   description = "Minimal registry example"
@@ -17,19 +17,11 @@ module "cloud_registry" {
   # Пример IAM-привязки
   iam_bindings = [
     {
-      role    = "editor"
+      role = "editor"
       members = [
         "serviceAccount:${yandex_iam_service_account.registry.id}"
       ]
     }
   ]
 
-
-
-  # Таймауты (опционально)
-  timeouts = {
-    create = "10m"
-    update = "10m"
-    delete = "10m"
-  }
 }
