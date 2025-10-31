@@ -63,13 +63,3 @@ variable "ip_permissions" {
   })
   default = null
 }
-
-variable "timeouts" {
-  description = "Timeout settings for create, update, delete operations"
-  type = object({
-    create = string
-    update = string
-    delete = string
-  })
-  default = null
-}
