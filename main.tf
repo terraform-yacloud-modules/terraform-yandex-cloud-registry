@@ -17,9 +17,9 @@ resource "yandex_cloudregistry_registry" "this" {
 
 # IAM bindings for the registry
 resource "yandex_cloudregistry_registry_iam_binding" "this" {
-  for_each  = { for idx, binding in var.iam_bindings : idx => binding }
-  role      = each.value.role
-  members   = each.value.members
+  for_each    = { for idx, binding in var.iam_bindings : idx => binding }
+  role        = each.value.role
+  members     = each.value.members
   registry_id = var.registry_id == "" ? yandex_cloudregistry_registry.this.id : var.registry_id
 }
 
