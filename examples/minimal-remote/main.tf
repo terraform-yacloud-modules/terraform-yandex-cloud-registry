@@ -4,10 +4,10 @@ resource "yandex_iam_service_account" "registry" {
 
 module "cloud_registry" {
   source = "../../"
-  name   = "minimal-registry"
+  name   = "minimal-remote-registry"
 
   # Необязательные параметры со значениями по умолчанию
-  description = "Minimal registry example"
+  description = "Minimal Remote registry example"
   labels = {
     environment = "test"
   }
