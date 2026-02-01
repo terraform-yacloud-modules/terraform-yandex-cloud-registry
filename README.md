@@ -94,20 +94,21 @@ No modules.
 | [yandex_cloudregistry_registry.this](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/cloudregistry_registry) | resource |
 | [yandex_cloudregistry_registry_iam_binding.this](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/cloudregistry_registry_iam_binding) | resource |
 | [yandex_cloudregistry_registry_ip_permission.this](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/cloudregistry_registry_ip_permission) | resource |
+| [yandex_client_config.client](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/data-sources/client_config) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_description"></a> [description](#input\_description) | Description of the registry | `string` | `""` | no |
-| <a name="input_folder_id"></a> [folder\_id](#input\_folder\_id) | ID of the folder that the registry belongs to | `string` | n/a | yes |
-| <a name="input_iam_bindings"></a> [iam\_bindings](#input\_iam\_bindings) | List of IAM bindings to apply to the registry | <pre>list(object({<br/>    role    = string<br/>    members = set(string)<br/>  }))</pre> | `[]` | no |
-| <a name="input_ip_permissions"></a> [ip\_permissions](#input\_ip\_permissions) | IP permissions for the registry | <pre>object({<br/>    pull = set(string)<br/>    push = set(string)<br/>  })</pre> | `null` | no |
+| <a name="input_folder_id"></a> [folder\_id](#input\_folder\_id) | (Optional) The ID of the Yandex Cloud Folder that the resources belongs to.<br><br>    Allows to create bucket in different folder.<br>    It will try to create bucket using IAM-token in provider config, not using access\_key.<br>    If omitted, folder\_id specified in provider config and access\_key is used. | `string` | `null` | no |
+| <a name="input_iam_bindings"></a> [iam\_bindings](#input\_iam\_bindings) | List of IAM bindings to apply to the registry | <pre>list(object({<br>    role    = string<br>    members = set(string)<br>  }))</pre> | `[]` | no |
+| <a name="input_ip_permissions"></a> [ip\_permissions](#input\_ip\_permissions) | IP permissions for the registry | <pre>object({<br>    pull = set(string)<br>    push = set(string)<br>  })</pre> | `null` | no |
 | <a name="input_kind"></a> [kind](#input\_kind) | Kind of the registry | `string` | `"DOCKER"` | no |
 | <a name="input_labels"></a> [labels](#input\_labels) | Resource labels as key:value pairs. Maximum of 64 per resource. | `map(string)` | `{}` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name of the registry | `string` | n/a | yes |
+| <a name="input_properties"></a> [properties](#input\_properties) | Resource properties as key:value pairs. Maximum of 64 per resource. | `map(string)` | `{}` | no |
 | <a name="input_registry_id"></a> [registry\_id](#input\_registry\_id) | ID of the Registry resource to return. If not set, will be created. | `string` | `""` | no |
-| <a name="input_timeouts"></a> [timeouts](#input\_timeouts) | Timeout settings for create, update, delete operations | <pre>object({<br/>    create = string<br/>    update = string<br/>    delete = string<br/>  })</pre> | `null` | no |
 | <a name="input_type"></a> [type](#input\_type) | Type of the registry | `string` | `"LOCAL"` | no |
 
 ## Outputs

@@ -10,6 +10,7 @@ resource "yandex_cloudregistry_registry" "this" {
   folder_id   = local.folder_id
   description = var.description
   labels      = var.labels
+  properties  = var.properties
   kind        = var.kind
   type        = var.type
 

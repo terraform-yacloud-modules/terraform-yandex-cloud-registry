@@ -28,6 +28,12 @@ variable "labels" {
   default     = {}
 }
 
+variable "properties" {
+  description = "Resource properties as key:value pairs. Maximum of 64 per resource."
+  type        = map(string)
+  default     = {}
+}
+
 variable "kind" {
   description = "Kind of the registry"
   type        = string
