@@ -1,3 +1,10 @@
+## v0.8.0 - 2026-03-02
+### Chores
+- 8d5ea81 chore(deps): bump kvendingoldo/git-flow-action from 2.2.0 to 2.16.0
+
+### Miscellaneous
+- 3b1b4cf Merge pull request [#9](https://github.com/terraform-yacloud-modules/terraform-yandex-cloud-registry/pull/9) from terraform-yacloud-modules/dependabot/github_actions/kvendingoldo/git-flow-action-2.16.0
+
 ## v0.7.0
 ## v0.6.0
 ## v0.5.0
