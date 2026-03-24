@@ -1,3 +1,9 @@
+## v0.10.0 - 2026-03-24
+### Miscellaneous
+- fee43c7 Merge pull request [#7](https://github.com/terraform-yacloud-modules/terraform-yandex-cloud-registry/pull/7) from iamshulya/release/0.7
+- cc5f47f fix example
+- 4e273b5 init properties for remote registry
+
 ## v0.9.0 - 2026-03-11
 ### Chores
 - 8071c9d chore(deps): bump hashicorp/setup-terraform from 3 to 4
