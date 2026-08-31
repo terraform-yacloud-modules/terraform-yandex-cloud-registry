@@ -1,3 +1,10 @@
+## v0.11.0 - 2026-08-31
+### Chores
+- 00b8b5f chore(deps): bump actions/cache from 5.0.3 to 5.0.5
+
+### Miscellaneous
+- 449566f Merge pull request [#12](https://github.com/terraform-yacloud-modules/terraform-yandex-cloud-registry/pull/12) from terraform-yacloud-modules/dependabot/github_actions/actions/cache-5.0.5
+
 ## v0.10.0 - 2026-03-24
 ### Miscellaneous
 - fee43c7 Merge pull request [#7](https://github.com/terraform-yacloud-modules/terraform-yandex-cloud-registry/pull/7) from iamshulya/release/0.7
