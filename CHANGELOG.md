@@ -1,3 +1,10 @@
+## v0.12.0 - 2026-09-01
+### Chores
+- 70e3c5a chore(deps): bump actions/cache from 5.0.5 to 6.1.0
+
+### Miscellaneous
+- 7cb889b Merge pull request [#14](https://github.com/terraform-yacloud-modules/terraform-yandex-cloud-registry/pull/14) from terraform-yacloud-modules/dependabot/github_actions/actions/cache-6.1.0
+
 ## v0.11.0 - 2026-08-31
 ### Chores
 - 00b8b5f chore(deps): bump actions/cache from 5.0.3 to 5.0.5
