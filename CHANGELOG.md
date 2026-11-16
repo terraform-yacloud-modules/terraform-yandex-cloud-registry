@@ -1,3 +1,10 @@
+## v0.14.0 - 2026-11-16
+### Bug Fixes
+- dc18f7c fix(examples): make minimal-remote self-contained with Lockbox secret
+
+### Miscellaneous
+- 4e399ae Merge pull request [#15](https://github.com/terraform-yacloud-modules/terraform-yandex-cloud-registry/pull/15) from terraform-yacloud-modules/fix/minimal-remote-lockbox-secret
+
 ## v0.13.0 - 2026-09-01
 ### Chores
 - 0a2829a chore(deps): bump actions/checkout from 6 to 7
