@@ -1,3 +1,14 @@
+## v0.14.0 - 2026-11-18
+### Bug Fixes
+- dc18f7c fix(examples): make minimal-remote self-contained with Lockbox secret
+
+### Chores
+- 84f096f chore(release): version v0.14.0 [skip ci]
+
+### Miscellaneous
+- 798f7ad ci: run semver job only on push to main ([#16](https://github.com/terraform-yacloud-modules/terraform-yandex-cloud-registry/pull/16))
+- 4e399ae Merge pull request [#15](https://github.com/terraform-yacloud-modules/terraform-yandex-cloud-registry/pull/15) from terraform-yacloud-modules/fix/minimal-remote-lockbox-secret
+
 ## v0.14.0 - 2026-11-16
 ### Bug Fixes
 - dc18f7c fix(examples): make minimal-remote self-contained with Lockbox secret
